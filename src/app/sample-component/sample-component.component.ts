@@ -15,5 +15,5 @@ export class SampleComponentComponent {
   num = 20
   values = ['prajeesh','Deepak','rahul']
   object = [{name:'Prajeesh',place:'kerala'},{name:'Deepak',place:'kerala'}]
-
+  firstName='Prajeesh'
 }

@@ -1,5 +1,12 @@
 <h1>Sample component</h1>
 <h3>Structural directives</h3>
 <h4 *ngIf="true">ngIf condition</h4>
+<h2>ngFor loop</h2>
 <h4 *ngFor="let data of values">{{data}}</h4>
 <h4 *ngFor="let one of object">Name:{{one.name}} | Place:{{one.place}}</h4>
+
+<ul [ngSwitch]="firstName">
+    <li *ngSwitchCase="'Deepak'">Deepak</li>
+    <li *ngSwitchCase="'Rahul'">Rahul</li>
+    <li *ngSwitchCase="'Prajeesh'">Prajeesh</li>
+</ul>
