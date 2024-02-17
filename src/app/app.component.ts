@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
-import { NgModule } from '@angular/core';
+import { ActivatedRouteSnapshot, RouterOutlet } from '@angular/router';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +15,10 @@ import { NgModule } from '@angular/core';
   ]
 })
 export class AppComponent {
+  constructor(private data:DataService){}
+  service(){
+    console.log(this.data.count++)
+  }
 
   title = 'project1';
   name ='String interpolation'
