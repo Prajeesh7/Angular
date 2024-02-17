@@ -13,6 +13,7 @@ import { Component } from '@angular/core';
 export class SampleComponentComponent {
 
   num = 20
-  click = false
+  values = ['prajeesh','Deepak','rahul']
+
 
 }
