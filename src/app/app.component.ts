@@ -2,17 +2,19 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRouteSnapshot, RouterOutlet } from '@angular/router';
 import { DataService } from '../data.service';
+import { SampleComponentComponent } from "./sample-component/sample-component.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  templateUrl: './app.component.html',git 
-  styleUrl: './app.component.css',
-
-  imports: [
-    RouterOutlet,
-    FormsModule
-  ]
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    
+    imports: [
+        RouterOutlet,
+        FormsModule,
+        SampleComponentComponent
+    ]
 })
 export class AppComponent {
   constructor(private data:DataService){}
