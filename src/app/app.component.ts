@@ -6,7 +6,7 @@ import { DataService } from '../data.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  templateUrl: './app.component.html',
+  templateUrl: './app.component.html',git 
   styleUrl: './app.component.css',
 
   imports: [
@@ -16,8 +16,11 @@ import { DataService } from '../data.service';
 })
 export class AppComponent {
   constructor(private data:DataService){}
-  service(){
+  increment(){
     console.log(this.data.count++)
+  }
+  decrement(){
+    console.log(this.data.count--)
   }
 
   title = 'project1';
