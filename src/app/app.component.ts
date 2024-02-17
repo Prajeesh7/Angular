@@ -23,4 +23,12 @@ export class AppComponent {
   sample(){
     alert("Button clicked")
   }
+  conditions(){
+    let num = 50
+    if ( num<50 ){
+      alert("number is lessthan 50")
+    }else{
+      alert("number is greaterthan 50")
+    }
+  }
 }
