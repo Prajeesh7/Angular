@@ -1,6 +1,6 @@
 <h1>Sample component</h1>
-<h3>Structural directives</h3>
-<h3 *ngIf="true">ngIf condition</h3>
+<h1 ngClass="titleHead">Structural directives</h1>
+<h3 ngClass="subTitle" *ngIf="true">ngIf condition</h3>
 <h3 ngClass="subTitle">ngFor loop</h3>
 <h4 *ngFor="let data of values">{{data}}</h4>
 <h4 *ngFor="let one of object">Name:{{one.name}} | Place:{{one.place}}</h4>
@@ -13,7 +13,7 @@
 </ul>
 
 <h2 ngClass="style"><span [ngStyle]="{color:'green'}">ngStyle</span> and <span [ngStyle]="{color:'yellow'}">ngClass</span> are used in this heading </h2>
-<h1 ngClass="pipesHead">Pipes in Angular.js</h1>
+<h1 ngClass="titleHead">Pipes in Angular.js</h1>
 <h3 ngClass="subTitle">Date pipes</h3>
 <h4>{{demoDate}}</h4>
 <h4>{{demoDate | date }}</h4>

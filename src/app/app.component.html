@@ -1,18 +1,18 @@
-<h1 class="style">Oneway data binding</h1>
+<h1 ngClass="style">Oneway databinding</h1>
 <h2>{{name}}</h2>
-<h2>Property binding</h2><br>
+<h2 ngClass="titleHead">Property binding</h2><br>
 <input type="text" [value]="name"><br><br>
 <input type="text" [value]="password"><br><br>
 <button [disabled]="buttonClick" class="btn">Click me</button>
-<h3>Event binding</h3>
+<h2 ngClass="titleHead">Event binding</h2>
 <button class="btn1" (click)="sample()">Click here</button>
 <br><br>
-<h2>Twoway databinding</h2>
+<h1 ngClass="style">Twoway databinding</h1>
 <input type="text" [(ngModel)]="name">
 <br><br>
-<h2>Conditions</h2>
+<h1 ngClass="style">Conditions</h1>
 <button (click)="conditions()">Conditions</button>
-<h1>Services</h1>
+<h1 ngClass="style">Services</h1>
 <button (click)="increment()">Increment</button>
 <button  (click)="decrement()">Decrement</button>
 <app-sample-component></app-sample-component>

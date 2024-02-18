@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { ActivatedRouteSnapshot, RouterOutlet } from '@angular/router';
 import { DataService } from '../data.service';
 import { SampleComponentComponent } from "./sample-component/sample-component.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-root',
@@ -13,7 +14,8 @@ import { SampleComponentComponent } from "./sample-component/sample-component.co
     imports: [
         RouterOutlet,
         FormsModule,
-        SampleComponentComponent
+        SampleComponentComponent,
+        CommonModule
     ]
 })
 export class AppComponent {
