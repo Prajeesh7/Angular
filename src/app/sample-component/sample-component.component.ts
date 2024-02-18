@@ -1,14 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { AgePipe } from "../age.pipe";
 
 @Component({
-  selector: 'app-sample-component',
-  standalone: true,
-  imports: [
-    CommonModule
-  ],
-  templateUrl: './sample-component.component.html',
-  styleUrl: './sample-component.component.css'
+    selector: 'app-sample-component',
+    standalone: true,
+    templateUrl: './sample-component.component.html',
+    styleUrl: './sample-component.component.css',
+    imports: [
+        CommonModule,
+        AgePipe
+    ]
 })
 export class SampleComponentComponent {
 
