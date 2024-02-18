@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ActivatedRouteSnapshot, RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { DataService } from '../data.service';
 import { SampleComponentComponent } from "./sample-component/sample-component.component";
 import { CommonModule } from '@angular/common';
@@ -19,7 +19,7 @@ import { CommonModule } from '@angular/common';
     ]
 })
 export class AppComponent {
-  constructor(private data:DataService){}
+  constructor(private data:DataService, private route: Router){}
   increment(){
     console.log(this.data.count++)
   }
@@ -43,5 +43,9 @@ export class AppComponent {
     }else{
       alert("number is greaterthan 50")
     }
+  }
+
+  onNavigate(){
+    this.route.navigate(['/about'])
   }
 }
