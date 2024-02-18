@@ -16,4 +16,8 @@ export class SampleComponentComponent {
   values = ['prajeesh','Deepak','rahul']
   object = [{name:'Prajeesh',place:'kerala'},{name:'Deepak',place:'kerala'}]
   firstName='Prajeesh'
+
+  demoDate = Date()
+  nameValue='This is string pipe'
+  secondObject=[{name:'Anu',place:'kerala'},{name:'Vinu',place:'kerala'}]
 }
